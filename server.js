@@ -19,8 +19,8 @@ app.get("/",(req,res)=>
           })
 
 })
-
- app.listen(3000,()=>{
-     console.log("Listening on 3000");
+const PORT = process.env.PORT || 5000
+ app.listen(PORT,()=>{
+     console.log("Listening on 5000");
  })
  
