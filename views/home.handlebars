@@ -1,3 +1,95 @@
+ <div id="content">
+    <nav class="navbar navbar-expand navbar-light text-center bg-white topbar mb-4 static-top shadow">
+      <div class="col-md-12">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <h5 class="font-weight-bold text-uppercase mb-1" style="display: contents;">COVID-19 CORONAVIRUS Tracker</h5>
+      </div>
+                </nav>
+    <div class="container-fluid">
+    
+         <div class="row">
+  <div class="col-xl-3 col-md-3 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total Cases</div>
+                                            <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{data.cases}}</div>
+                                                </div>
+                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa fa-users fa-2x text-info"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    <div class="col-xl-3 col-md-3 mb-4">
+                            <div class="card border-left-danger shadow h-100 py-2">
+                                                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Total Death</div>
+                                            <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{data.deaths}}</div>
+                                                </div>
+                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa fa-bed fa-2x text-danger"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    <div class="col-xl-3 col-md-3 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Recovered</div>
+                                            <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{data.recovered}}</div>
+                                                </div>
+                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa fa-child fa-2x text-success"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    <div class="col-xl-3 col-md-3 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">New Cases</div>
+                                            <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{data.todayCases}}</div>
+                                                </div>
+                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa fa-bell fa-2x text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+  </div> 
+      
 <div class="row">
 
                         <!-- Area Chart -->
@@ -54,4 +146,11 @@
 </tr>
 
 {{/each}}
+</tbody>
 </table>
+</div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>

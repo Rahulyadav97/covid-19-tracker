@@ -2,9 +2,113 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
+    <style>
+        .social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.youtube:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.youtube .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.instagram:before {
+  background-color: #3f729b;
+}
+.social-btns .btn.instagram .fa {
+  color: #3f729b;
+}
+.social-btns .btn.skype:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.skype .fa {
+  color: #00aff0;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  height: 50px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 90px;
+  margin: 0 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+  padding: 0.7rem .75rem !important;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 18px;
+  vertical-align: top;
+}
+
+    </style>
     <body>
         {{{ body }}}
+         <footer class="sticky-footer bg-light shadow">
+                <div class="container my-auto text-center">
+                <h4 class="text-info font-weight-bold"><u>Follow Me</u></h4>
+                <div class="social-btns"><a class="btn facebook" href="https://www.facebook.com/ngrahulyadav/"><i class="fa fa-facebook"></i></a><a class="btn twitter" href="https://twitter.com/codecammando><i class="fa fa-twitter"></i></a><a class="btn instagram" href="https://www.instagram.com/rahuln_yadav/"><i class="fa fa-instagram"></i></a><a class="btn skype" href="#"><i class="fa fa-skype"></i></a><a class="btn youtube" href="#"><i class="fa fa-youtube"></i></a>
+</div><hr>
+                    <div class="copyright text-center my-auto">
+                        <span class="font-weight-bold">Copyright &copy; COVID-19 Tracker <?php echo date('Y') ?></span>
+                    </div>
+                </div>
+            </footer>
     </body>
 </html>

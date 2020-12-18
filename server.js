@@ -12,10 +12,11 @@ var handlebars =require("express-handlebars").create({defaultLayout:"main"})
 //  })
 app.get("/",(req,res)=>
 {
-   
+    let dataAll;
+    api.all().then(response=>{dataAll = response});
     api.countries().then(response=>{
-        console.log(response);
-        res.render("home",{ info:response});
+       // console.log(response);
+        res.render("home",{ info:response,data:dataAll});
           })
 
 })
