@@ -1,0 +1,8 @@
+<h1 style="text-align: center;">Novel Covid Tracker</h1>
+{{#each info}}
+<h4 style="text-align: center;">{{this.country}}</h4>
+<img class="center" src="{{this.countryInfo.flag}}"  />
+<div class="center" style="text-align: center;">
+    <div>Total Cases:{{this.cases}}</div>
+</div>
+{{/each}}
